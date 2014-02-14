@@ -12,11 +12,9 @@ $(document).ready(function() {
  */
 function initializePage() {
   $('.project a').click(addProjectDetails);
-
   $('#colorBtn').click(randomizeColors);
   $("#testjs").click(function(e) {
     $.get("http://URL", callBackFn);
-
   });
 }
 
@@ -47,7 +45,7 @@ function addProjectDetails(e) {
   var idNumber = projectID.substr('project'.length);
 
   console.log("User clicked on project " + idNumber);
-  var projURL = "/project/" +idNumber);
+  var projURL = "/project/" +idNumber;
   console.log("Project URL is "+ projURL);
   $.get(projURL, callBackFn); 
 
