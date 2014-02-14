@@ -47,7 +47,7 @@ function addProjectDetails(e) {
   var idNumber = projectID.substr('project'.length);
 
   console.log("User clicked on project " + idNumber);
-  var projURL = "/project/" +idNumber;
+  var projURL = "/project/" +idNumber);
   console.log("Project URL is "+ projURL);
   $.get(projURL, callBackFn); 
 
@@ -62,7 +62,7 @@ function randomizeColors(e) {
   $.get("/palette", colorCallBack);
 }
 
-function colorCallBack () {
+function colorCallBack (result) {
 	var tmp = result['colors'];
 	var colors = tmp['hex'];
   $('body').css('background-color', colors[0]);
