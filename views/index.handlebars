@@ -23,15 +23,13 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
+			<h1>Alice Nguyen</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="colorBtn" class="btn btn-primary btn-lg">Colors!</button>
+            <button id="colorBtn" class="btn btn-primary btn-lg">Colors!</button>
+            <div id="gitrepo" class="clearfix"></div>
 		</div>
 
 		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		{{#each projects}}
 		<div class="project" id="{{id}}">
 			<div class="thumbnail">
@@ -42,7 +40,9 @@
 				<div class="details"></div>
 			</div>
 		</div>
-		{{/each}}
+        {{/each}}
+
+        
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
