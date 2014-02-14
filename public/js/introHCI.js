@@ -13,9 +13,7 @@ $(document).ready(function() {
 function initializePage() {
   $('.project a').click(addProjectDetails);
   $('#colorBtn').click(randomizeColors);
-  $("#testjs").click(function(e) {
-    $.get("http://URL", callBackFn);
-  });
+
 }
 
 function callBackFn (result) {
